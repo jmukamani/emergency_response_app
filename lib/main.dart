@@ -61,6 +61,23 @@ class HomeScreen extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           BottomNavigationBarItem(icon: Icon(Icons.location_on), label: 'Location'),
         ],
+        onTap: (index) {
+          switch (index) {
+            case 0:
+              Navigator.pushNamed(context, '/');
+              break;
+            case 1:
+              Navigator.pushNamed(context, '/profile');
+              break;
+            case 2:
+              Navigator.pushNamed(context, '/location');
+              break;
+          }
+        },
+      ),
+    );
+  }
+}
 
 
 class _MyHomePageState extends State<MyHomePage> {
