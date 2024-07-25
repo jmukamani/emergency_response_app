@@ -79,6 +79,9 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
+class FloatingActionButton {
+}
+
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
